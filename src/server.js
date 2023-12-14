@@ -1,12 +1,6 @@
-const express = require("express");
-
-const app = express();
+const app = require("./app");
 
 const PORT = 8000;
-
-app.get("/ynap", (req, res) => {
-  res.send("Hello 'You Need A Project' Community!");
-});
 
 function startServer() {
   app.listen(PORT, () => {
