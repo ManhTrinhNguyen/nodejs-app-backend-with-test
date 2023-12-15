@@ -10,7 +10,12 @@ app.get("/ynap", (req, res) => {
 
 app.post("/ynap", (req, res) => {
   const { student, teacher, project } = req.body;
-
-  res.status(201).json({ student, teacher, project });
+  if (!student || !teacher || !project) {
+    return res.status(400).json({
+      error: 'Missing required property'
+    })
+  };
+  
+  return res.status(201).json({ student, teacher, project });
 });
 module.exports = app;

@@ -26,3 +26,15 @@ describe("Test POST /ynap", () => {
     
   });
 });
+
+describe('Test Error case', () => {
+  test('It should catch missing required properties', async () => {
+    const response = await request(app)
+      .post("/ynap")
+      .send({
+        student: "Trinh Nguyen",
+        teacher: "John Rice",
+      })
+    .expect(400)
+  });
+});
