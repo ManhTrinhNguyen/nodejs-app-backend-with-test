@@ -1,13 +1,15 @@
 # Project Name
-Backend and Backend Testing with Nodejs 
+
+Backend and Backend Testing with Nodejs
 
 ## Expressjs (Nodejs backend frameworkd)
 
 Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
-`npm i express` to install express package 
+`npm i express` to install express package
 
 ## Description
+
 This project is the outcome of learning to code by creating basic web server that can handle simple HTTP requests.
 
 ## Installation
@@ -31,7 +33,6 @@ A node server is available which runs the express library and serves the static 
 To start the server run this command and then click the link in the console to open the server or otherwise type it into the browser.
 
 `npm run dev`
-
 
 ## Contributing
 
